@@ -1,0 +1,208 @@
+:root {
+  /* Colors */
+  --bitcoin-orange: #f7931a;
+  --soft-orange: #ffe9d5;
+  --secondary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
+  --warm-black: #282623;
+  --black: #201e1c;
+  --off-white: #faf8f7;
+  --just-white: #fff;
+  --grey: #bababa;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
+}
+header {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 320px;
+  height: 334px;
+  text-align: center;
+  background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
+}
+header img {
+  width: 150px;
+  height: 24px;
+  margin-top: 60px;
+}
+main {
+  width: 100%;
+  height: auto;
+  background-color: var(--off-white);
+}
+.header__container {
+  position: relative;
+  width: 90%;
+  min-width: 228px;
+  max-width: 900px;
+  height: 2180px;
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+}
+.header__container h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem; /*dimension etre lineas*/
+}
+.header__container p {
+  margin-top: 2.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+}
+.header__float-button {
+  position: absolute;
+  display: block;
+  width: 22.9rem;
+  height: 4.8rem;
+  padding: 1.5rem;
+  text-decoration: none;
+  background-color: white;
+  top: 17.5rem;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: black;
+  left: calc(50% - 11rem);
+}
+.header__float-button span {
+  background-image: url("/icon/down-arrow.svg");
+  display: inline-block;
+  width: 13px;
+  height: 8px;
+  margin-left: 1.5rem;
+}
+.main-exchange-container {
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  background-color: #faf8f7;
+}
+.main-exchange-container__img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-image: url("/icon/Bitcoin.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-exchange-container__title {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.main-exchange-container__title h2 {
+  margin-bottom: 30px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: black;
+}
+.main-exchange-container__title p {
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: #757575;
+}
+
+.table-currency {
+  width: 70%;
+  margin: 0 auto;
+  height: 36rem;
+  min-width: 235px;
+  max-width: 500px;
+  
+}
+.table-currency > p {
+  color: var(--bitcoin-orange);
+  font-size: 2rem;
+  letter-spacing: -0.1rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.table-currency__table1 {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template: repeat(4, 5rem) / repeat(2, 11rem);
+  justify-content: center;
+  align-items: center;
+  gap: 1.4rem 0.2rem;
+  font-size: 1.7rem;
+}
+.table-currency__table1 div {
+  background-color: white;
+  padding: 2rem;
+  text-align: center;
+}
+.table-currency__table1 div:nth-child(1) {
+  border-top-left-radius: 1.8rem;
+}
+.table-currency__table1 div:nth-child(2) {
+  border-top-right-radius: 1.8rem;
+}
+.table-currency__table1 div:nth-child(7) {
+  border-bottom-left-radius: 1.8rem;
+}
+.table-currency__table1 div:nth-child(8) {
+  border-bottom-right-radius: 1.8rem;
+}
+.table-currency__table1-item {
+  color: #c4c2c0;
+}
+.value-green,
+.value-red {
+  font-size: 1.3rem;
+  color: #757575;
+  letter-spacing: 0.12rem;
+}
+.value-green span,
+.value-red span {
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  margin-left: 0.69rem;
+}
+.value-green span {
+  background-image: url("/icon/trending-up.svg");
+}
+.value-red span {
+  background-image: url("/icon/trending-down.svg");
+}
+.table-currency__date {
+  width: 190px;
+  height: 31px;
+  background-color: var(--soft-orange);
+  margin: 0 auto;
+  margin-top: 15px;
+  text-align: center;
+  padding: 0.6rem;
+  border-radius: 0.8rem;
+  font-size: 1.3rem;
+  color:#0000008c;
+}
+.table-currency__date b{
+    color: #8a8a87;
+    
+}
