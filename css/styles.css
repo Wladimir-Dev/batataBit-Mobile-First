@@ -287,3 +287,20 @@ main {
 .card .dove{
   background-image: url("/icon/check-circle.svg");
 }
+.bitcoin-img-container{
+  width: 100%;
+  min-width: 320px;
+  height: 50vh;
+  background-image: url("/icon/bitcoinbaby2x.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bitcoin-img-container h2{
+padding-top: 6rem;
+font-size: 2.4rem;
+font-weight: bold;
+line-height: 2.6rem;
+color: var(--just-white);
+text-align: center;
+}
