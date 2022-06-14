@@ -129,7 +129,6 @@ main {
   height: 36rem;
   min-width: 235px;
   max-width: 500px;
-  
 }
 .table-currency > p {
   color: var(--bitcoin-orange);
@@ -200,9 +199,91 @@ main {
   padding: 0.6rem;
   border-radius: 0.8rem;
   font-size: 1.3rem;
-  color:#0000008c;
+  color: #0000008c;
 }
-.table-currency__date b{
-    color: #8a8a87;
-    
+.table-currency__date b {
+  color: #8a8a87;
+}
+.main-product {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 10px;
+  background-color: var(--black);
+}
+.main-product__logo {
+  position: absolute;
+  background-image: url("/icon/batata.svg");
+  width: 4rem;
+  height: 2.5rem;
+  top: -1rem;
+  left: calc(50% - 2rem);
+}
+.main-product__title {
+  width: 90%;
+  min-width: 28.8rem;
+  height: auto;
+  margin: 0rem auto;
+  margin-top: 5rem;
+  text-align: center;
+}
+.main-product__title h2 {
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
+}
+.main-product__title p {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
+.card {
+  width: 100%;
+  min-width: 28.8rem;
+  max-width: 40rem;
+  height: 15rem;
+  margin: 1.5rem auto;
+  border-radius: 0.4rem;
+  padding: 1.5rem;
+  background-color: var(--warm-black);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.card >span {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 1rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card__title {
+  margin-bottom: 1rem;
+  color: var(--just-white);
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+}
+.card__body{
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #808080;
+  line-height: 1.8rem;
+}
+.card .clock{
+  background-image: url("/icon/clock.svg");
+}
+.card .eye{
+  background-image: url("/icon/eye.svg");
+}
+.card .dollar{
+  background-image: url("/icon/dollar-sign.svg");
+}
+.card .dove{
+  background-image: url("/icon/check-circle.svg");
 }
