@@ -147,7 +147,7 @@ main {
   max-width: 500px;
 }
 
-.table-currency>p {
+.table-currency > p {
   color: var(--bitcoin-orange);
   font-size: 2rem;
   letter-spacing: -0.1rem;
@@ -290,7 +290,7 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 }
 
-.card>span {
+.card > span {
   display: inline-block;
   width: 2rem;
   height: 2rem;
@@ -379,14 +379,22 @@ main {
   line-height: 1.8rem;
   color: #757575;
 }
-
+.plans__slider {
+  display: flex;
+  gap: 0.5rem;
+  height: 31.6rem;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
 .plans__card {
   position: relative;
+  scroll-snap-align: center;
   border-radius: 1rem;
   padding: 0 1.5rem;
   width: 70%;
   max-width: 30rem;
-  min-width: 23rem;
+  min-width: 19rem;
   min-height: 25rem;
   margin: 5rem auto 0;
   background-color: var(--just-white);
@@ -406,29 +414,30 @@ main {
   top: -1.5rem;
   left: calc(50% - 5.5rem);
 }
-.plans__card-info h3{
+.plans__card-info h3 {
   padding-top: 3rem;
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 1.8rem;
   color: var(--black);
 }
-.plans__card-price{
+.plans__card-price {
   padding: 0.5rem 0;
   font-size: 5.2rem;
   font-weight: bold;
   line-height: 5.3rem;
-  color:var(--black);
+  color: var(--black);
 }
-.plans__card-price span{
+.plans__card-price span {
   font-size: 1.2rem;
   font-weight: 300;
+  vertical-align: super;
 }
-.plans__card-saving{
+.plans__card-saving {
   font-size: 1.2rem;
-  color: #757575; 
+  color: #757575;
 }
-.plans__card-button{
+.plans__card-button {
   width: 14rem;
   height: 4.8rem;
   margin-top: 2rem;
@@ -441,7 +450,7 @@ main {
   line-height: 1.8rem;
   font-family: "DM Sans", sans-serif;
 }
-.plans__card-button span{
+.plans__card-button span {
   display: inline-block;
   width: 2rem;
   height: 2rem;
@@ -449,4 +458,26 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   vertical-align: middle;
-} 
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-width: 320px;
+  height: 15rem;
+  background-color: var(--bitcoin-orange);
+}
+footer .left ul {
+  list-style: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+}
+.left li{
+  margin: 1rem 0;
+}
+.left a{
+  text-decoration: none;
+  color: var(--just-white);
+}

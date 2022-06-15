@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tablet.css" media="(min-width:930px)">
+
 </head>
 
 <body>
@@ -47,8 +49,21 @@
                     <p><b>Actualizado:</b> 19 Julio 23:45</p>
                 </div>
             </div>
-            <div class="table-commission">
-
+            <div class="table-currency">
+                <p><b>Monedas</b></p>
+                <div class="table-currency__table1">
+                    <div class="table-currency__table1-item">Bitcoin</div>
+                    <div class="table-currency__table1-item value-red">$1.96<span></span></div>
+                    <div class="table-currency__table1-item">Etherum</div>
+                    <div class="table-currency__table1-item value-green">$0.07<span></span></div>
+                    <div class="table-currency__table1-item">Ripple</div>
+                    <div class="table-currency__table1-item value-red">$2.15 <span></span></div>
+                    <div class="table-currency__table1-item">Stellar</div>
+                    <div class="table-currency__table1-item value-red">$4.96 <span></span></div>
+                </div>
+                <div class="table-currency__date">
+                    <p><b>Actualizado:</b> 19 Julio 23:45</p>
+                </div>
             </div>
         </section>
         <section class="main-product">
@@ -94,33 +109,45 @@
             </div>
             <section class="plans__slider">
                 <article class="plans__card">
+                    <div class="plans__card-info">
+                        <h3>Pago mensual</h3>
+                        <p class="plans__card-price"><span>$</span>15</p>
+                        <p class="plans__card-saving">*Plan básico para mantenerte informado.</p>
+                        <button class="plans__card-button">Escoger Este <span></span></button>
+                    </div>
+                </article>
+                <article class="plans__card">
                     <p class="recommend">Recomendado</p>
                     <div class="plans__card-info">
                         <h3>Pago Anual</h3>
-                        <p class="plans__card-price"><span>$</span>99</p>
+                        <p class="plans__card-price"><span>$</span>49</p>
                         <p class="plans__card-saving">*Ahorras $129 comparado al plan mensual</p>
                         <button class="plans__card-button">Escoger Este <span></span></button>
                     </div>
                 </article>
                 <article class="plans__card">
-                    <div>
-                        <h3>Pago Anual</h3>
-                        <p><span>$</span>99</p>
-                        <p>Ahorras $129 comparado al plan mensual</p>
-                        <button>Escoger Este <span></span></button>
-                    </div>
-                </article>
-                <article class="plans__card">
-                    <div>
-                        <h3>Pago Anual</h3>
-                        <p><span>$</span>99</p>
-                        <p>Ahorras $129 comparado al plan mensual</p>
-                        <button>Escoger Este <span></span></button>
+                    <div class="plans__card-info">
+                        <h3>Acceso de por vida</h3>
+                        <p class="plans__card-price"><span>$</span>99</p>
+                        <p class="plans__card-saving">*Ahorras $999+ comparado al plan anual.</p>
+                        <button class="plans__card-button">Escoger Este <span></span></button>
                     </div>
                 </article>
             </section>
         </section>
     </main>
+    <footer>
+        <section class="left">
+            <ul>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Crunchbase</a></li>
+                <li><a href="#">Hackernews</a></li>
+            </ul>
+        </section>
+        <section class="right">
+            <img src="icon/logo-footer.svg" alt="logo batatabit 2022">
+        </section>
+    </footer>
 </body>
 
 </html>
